@@ -37,6 +37,6 @@ const findPost = async (req, res) => {
     }
 };
 
-exports.module = {
+module.exports = {
     findPost,
 };
