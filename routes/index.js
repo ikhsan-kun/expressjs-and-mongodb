@@ -16,5 +16,14 @@ router.get('/posts', PostController.findPosts);
 //define route for create post
 router.post('/posts', validatePost, PostController.createPost);
 
+//define route for get post by id
+router.get('/posts/:id', PostController.findPostById);
+
+//define route for update post
+router.put('/posts/:id', validatePost, PostController.updatePost);
+
+//define route for delete post
+router.delete('/posts/:id', PostController.deletePost);
+
 //export router
 module.exports = router
